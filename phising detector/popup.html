@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Phishing Detector</title>
+
+    <style>
+        body {
+            width: 320px;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        #website {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            word-break: break-all;
+            font-size: 13px;
+        }
+
+        button {
+            width: 100%;
+            padding: 11px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        #result {
+            margin-top: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .low {
+            border-left: 6px solid green;
+        }
+
+        .suspicious {
+            border-left: 6px solid orange;
+        }
+
+        .high {
+            border-left: 6px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🛡️ Phishing Detector</h2>
+
+    <div id="website">
+        Website will appear here
+    </div>
+
+    <button id="checkButton">Check Website</button>
+
+    <pre id="result"></pre>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
